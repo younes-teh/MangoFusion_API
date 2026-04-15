@@ -4,6 +4,7 @@ using MangoFusion_API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MangoFusion_API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260413170552_SeedMenuItem")]
+    partial class SeedMenuItem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -132,7 +135,7 @@ namespace MangoFusion_API.Migrations
                             Id = 1,
                             Category = "Appetizer",
                             Description = "Fusc tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
-                            Image = "images/spring_roll.jpg",
+                            Image = "https://dotnetmasteryimages.blob.core.windows.net/redmango/spring roll.jpg",
                             Name = "Spring Roll",
                             Price = 7.9900000000000002,
                             SpecialTag = ""
@@ -142,8 +145,8 @@ namespace MangoFusion_API.Migrations
                             Id = 2,
                             Category = "Appetizer",
                             Description = "Fusc tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
-                            Image = "images/samosa.jpg",
-                            Name = "Samosa",
+                            Image = "https://dotnetmasteryimages.blob.core.windows.net/redmango/idli.jpg",
+                            Name = "Idli",
                             Price = 8.9900000000000002,
                             SpecialTag = ""
                         },
@@ -152,8 +155,8 @@ namespace MangoFusion_API.Migrations
                             Id = 3,
                             Category = "Appetizer",
                             Description = "Fusc tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
-                            Image = "images/soup.jpg",
-                            Name = "Soup",
+                            Image = "https://dotnetmasteryimages.blob.core.windows.net/redmango/pani puri.jpg",
+                            Name = "Panu Puri",
                             Price = 8.9900000000000002,
                             SpecialTag = "Best Seller"
                         },
@@ -162,8 +165,8 @@ namespace MangoFusion_API.Migrations
                             Id = 4,
                             Category = "Entrée",
                             Description = "Fusc tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
-                            Image = "images/noodles.jpg",
-                            Name = "Noodles",
+                            Image = "https://dotnetmasteryimages.blob.core.windows.net/redmango/hakka noodles.jpg",
+                            Name = "Hakka Noodles",
                             Price = 10.99,
                             SpecialTag = ""
                         },
@@ -172,8 +175,8 @@ namespace MangoFusion_API.Migrations
                             Id = 5,
                             Category = "Entrée",
                             Description = "Fusc tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
-                            Image = "images/pav_bhaji.jpg",
-                            Name = "Pav Bhaji",
+                            Image = "https://dotnetmasteryimages.blob.core.windows.net/redmango/malai kofta.jpg",
+                            Name = "Malai Kofta",
                             Price = 12.99,
                             SpecialTag = "Top Rated"
                         },
@@ -182,7 +185,7 @@ namespace MangoFusion_API.Migrations
                             Id = 6,
                             Category = "Entrée",
                             Description = "Fusc tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
-                            Image = "images/pizza.jpg",
+                            Image = "https://dotnetmasteryimages.blob.core.windows.net/redmango/paneer pizza.jpg",
                             Name = "Paneer Pizza",
                             Price = 11.99,
                             SpecialTag = ""
@@ -190,10 +193,10 @@ namespace MangoFusion_API.Migrations
                         new
                         {
                             Id = 7,
-                            Category = "Dessert",
+                            Category = "Entrée",
                             Description = "Fusc tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
-                            Image = "images/mango_paradise.jpg",
-                            Name = "Mango Paradise",
+                            Image = "https://dotnetmasteryimages.blob.core.windows.net/redmango/paneer tikka.jpg",
+                            Name = "Paneer Tikka",
                             Price = 13.99,
                             SpecialTag = "Chef's Special"
                         },
@@ -202,7 +205,7 @@ namespace MangoFusion_API.Migrations
                             Id = 8,
                             Category = "Dessert",
                             Description = "Fusc tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
-                            Image = "images/carrot_love.jpg",
+                            Image = "https://dotnetmasteryimages.blob.core.windows.net/redmango/carrot love.jpg",
                             Name = "Carrot Love",
                             Price = 4.9900000000000002,
                             SpecialTag = ""
@@ -212,10 +215,20 @@ namespace MangoFusion_API.Migrations
                             Id = 9,
                             Category = "Dessert",
                             Description = "Fusc tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
-                            Image = "images/sweet_rolls.jpg",
-                            Name = "Sweet Rolls",
+                            Image = "https://dotnetmasteryimages.blob.core.windows.net/redmango/rasmalai.jpg",
+                            Name = "Rasmalai",
                             Price = 4.9900000000000002,
                             SpecialTag = "Chef's Special"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Category = "Dessert",
+                            Description = "Fusc tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
+                            Image = "https://dotnetmasteryimages.blob.core.windows.net/redmango/sweet rolls.jpg",
+                            Name = "Sweet Rolls",
+                            Price = 3.9900000000000002,
+                            SpecialTag = "Top Rated"
                         });
                 });
 
